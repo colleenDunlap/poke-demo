@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'poke-demo';
+  joke: any;
+  constructor(private data: DataService){
+
+  }
+  ngOnInit(){
+    this.data.gimmeJokes().subscribe(res =>{
+      this.joke = res;
+    })
+  }
 }
