@@ -29,7 +29,8 @@
   "dataGroups":[
     {
       "name":"jokes-api",
-      "urls":["https://api.chucknorris.io/jokes/random"],
+      "urls":["https://pokeapi.co/api/v2/pokemon/bulbasaur","https://pokeapi.co/api/v2/pokemon/psyduck",
+         "https://pokeapi.co/api/v2/pokemon/lucario","https://pokeapi.co/api/v2/pokemon/gengar"],
       "cacheConfig":{
         "strategy":"freshness",
         "maxSize":20,

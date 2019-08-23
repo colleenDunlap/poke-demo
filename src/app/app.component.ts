@@ -8,13 +8,14 @@ import { DataService } from './data.service';
 })
 export class AppComponent {
   title = 'poke-demo';
-  joke: any;
+  poke: any;
   constructor(private data: DataService){
 
   }
   ngOnInit(){
     this.data.gimmeJokes().subscribe(res =>{
-      this.joke = res;
+      this.poke= res;
+      console.log(this.poke)
     })
   }
 }
