@@ -7,10 +7,15 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
   public default;
   constructor(private http: HttpClient) { 
+    let img1 = new Image();
+		let img2 = new Image();
+		let img3 = new Image();
     this.default = this.http.get('https://pokeapi.co/api/v2/pokemon/bulbasaur');
-    this.http.get('https://pokeapi.co/api/v2/pokemon/gengar');
-    this.http.get('https://pokeapi.co/api/v2/pokemon/psyduck');
-    this.http.get('https://pokeapi.co/api/v2/pokemon/lucario');
+    let gengar: any = this.http.get('https://pokeapi.co/api/v2/pokemon/gengar');
+    let psyduck:any = this.http.get('https://pokeapi.co/api/v2/pokemon/psyduck');
+    let lucario:any = this.http.get('https://pokeapi.co/api/v2/pokemon/lucario');
+    console.log(gengar);
+    
   }
   gimmeJokes(){
     let a = this.getRandomInt(4);
