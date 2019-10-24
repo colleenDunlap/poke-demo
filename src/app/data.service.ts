@@ -14,11 +14,12 @@ export class DataService {
     let gengar: any = this.http.get('https://pokeapi.co/api/v2/pokemon/gengar');
     let psyduck:any = this.http.get('https://pokeapi.co/api/v2/pokemon/psyduck');
     let lucario:any = this.http.get('https://pokeapi.co/api/v2/pokemon/lucario');
+    let vaporeon:any = this.http.get('https://pokeapi.co/api/v2/pokemon/vaporeon');
     console.log(gengar);
     
   }
   gimmeJokes(){
-    let a = this.getRandomInt(4);
+    let a = this.getRandomInt(5);
     
     if(a==0){
       return this.http.get('https://pokeapi.co/api/v2/pokemon/bulbasaur')
@@ -28,6 +29,9 @@ export class DataService {
     }
     else if(a==2){
       return this.http.get('https://pokeapi.co/api/v2/pokemon/psyduck')
+    }
+    else if(a==3){
+      return this.http.get('https://pokeapi.co/api/v2/pokemon/vaporeon');
     }
     else{
       return this.http.get('https://pokeapi.co/api/v2/pokemon/lucario')
