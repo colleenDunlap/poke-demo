@@ -29,11 +29,8 @@
   "dataGroups":[
     {
       "name":"jokes-api",
-      "urls":["https://pokeapi.co/api/v2/pokemon/bulbasaur",
-        "https://pokeapi.co/api/v2/pokemon/psyduck",
-         "https://pokeapi.co/api/v2/pokemon/lucario",
-         "https://pokeapi.co/api/v2/pokemon/gengar", 
-         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/**"],
+      "urls":["https://pokeapi.co/api/v2/pokemon/bulbasaur","https://pokeapi.co/api/v2/pokemon/psyduck",
+         "https://pokeapi.co/api/v2/pokemon/lucario","https://pokeapi.co/api/v2/pokemon/gengar", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/**"],
       "cacheConfig":{
         "strategy":"freshness",
         "maxSize":20,
